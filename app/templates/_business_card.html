@@ -1,0 +1,11 @@
+<div class="col">
+  <div class="card box-shadow">
+    <img class="card-img-top" src="https://picsum.photos/300/200" />
+    <div class="card-body">
+      <h5 class="card-title text-start">{{ business.name }}</h5>
+      <div class="card-text text-start">{% include "_star_rating.html" %}</div>
+      <p class="card-text text-start">{{ business.description }}</p>
+      <a href="{{ url_for('main.details_business',id=business.id) }}" class="stretched-link"></a>
+    </div>
+  </div>
+</div>

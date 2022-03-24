@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% from 'bootstrap5/form.html' import render_form %}
+{% block styles %}
+{{ super() }}
+<style>
+  body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+  }
+</style>
+{% endblock %}
+{% block content %}
+<div class="container">
+  <h1>{{ _("Add a New Busines") }}</h1>
+  {{ render_form(form) }}
+</div>
+{% endblock %}

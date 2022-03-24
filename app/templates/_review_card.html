@@ -1,0 +1,43 @@
+<div class="card">
+  <div class="card-body">
+    <div class="row justify-content-start">
+      <div class="col-1">
+        <img src="{{ review.author.avatar() }}">
+      </div>
+      <div class="col-4">
+        <p>{{ review.author.username }}
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-start">
+      <div class="col">
+        <span class="score">
+          <div class="score-wrap align-top">
+            <span class="stars-active" style="width:{{ ((review.rating / 5.0) * 100)|round }}%">
+              <i class="bi-star-fill" aria-hidden="true"></i>
+              <i class="bi-star-fill" aria-hidden="true"></i>
+              <i class="bi-star-fill" aria-hidden="true"></i>
+              <i class="bi-star-fill" aria-hidden="true"></i>
+              <i class="bi-star-fill" aria-hidden="true"></i>
+            </span>
+            <span class="stars-inactive">
+              <i class="bi-star" aria-hidden="true"></i>
+              <i class="bi-star" aria-hidden="true"></i>
+              <i class="bi-star" aria-hidden="true"></i>
+              <i class="bi-star" aria-hidden="true"></i>
+              <i class="bi-star" aria-hidden="true"></i>
+            </span>
+          </div>
+          <span class="align-top">
+            {{ _("%(when)s", when=moment(review.review_date).fromNow()) }}
+          </span>
+        </span>
+      </div>
+    </div>
+    <div class="row justify-content-start">
+      <div class="col">
+        {{review.review_text}}
+      </div>
+    </div>
+  </div>
+</div>

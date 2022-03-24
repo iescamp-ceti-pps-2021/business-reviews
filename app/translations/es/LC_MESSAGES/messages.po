@@ -1,0 +1,259 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-03-22 13:52+0100\n"
+"PO-Revision-Date: 2022-03-21 01:53+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: app/__init__.py:27
+msgid "Please log in to access this page."
+msgstr "Por favor, inicie sesión para acceder a esta página."
+
+#: app/auth/forms.py:17 app/auth/forms.py:25 app/auth/forms.py:35
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: app/auth/forms.py:18 app/auth/forms.py:41
+msgid "Password"
+msgstr "Contraseña"
+
+#: app/auth/forms.py:19
+msgid "Remember me"
+msgstr "Recuérdame"
+
+#: app/auth/forms.py:20 app/auth/routes.py:79
+msgid "Sign In"
+msgstr "Iniciar sesión"
+
+#: app/auth/forms.py:32
+msgid "Usernames must have only letters, numbers, dots or underscores"
+msgstr "Los nombres de usuario deben tener solo letras, números, puntos o guiones bajos"
+
+#: app/auth/forms.py:37
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: app/auth/forms.py:38
+msgid "First Name"
+msgstr "Nombre"
+
+#: app/auth/forms.py:39
+msgid "Last Name"
+msgstr "Apellido"
+
+#: app/auth/forms.py:47
+msgid "Passwords must match !"
+msgstr "Las contraseñas deben coincidir"
+
+#: app/auth/forms.py:49
+msgid "Confirm Password"
+msgstr "Confirmar contraseñas"
+
+#: app/auth/forms.py:51
+msgid "Sign Up"
+msgstr "Incribirse"
+
+#: app/auth/forms.py:55
+msgid "Email already registered!"
+msgstr "¡El correo electrónico ya existe!"
+
+#: app/auth/forms.py:59
+msgid "Username already taken!"
+msgstr "¡El nombre de usuario ya existe!"
+
+#: app/auth/routes.py:35
+msgid "Account Succesfully created"
+msgstr "Cuenta creada con éxito"
+
+#: app/auth/routes.py:40
+msgid "Something went wrong!"
+msgstr "¡Algo salió mal!"
+
+#: app/auth/routes.py:43
+msgid "User already exists!."
+msgstr "El usuario ya existe !."
+
+#: app/auth/routes.py:46
+msgid "Invalid Entry"
+msgstr "Entrada inválida"
+
+#: app/auth/routes.py:49 app/auth/routes.py:52
+msgid "Error connecting to the database"
+msgstr "Error al conectarse con la base de datos"
+
+#: app/auth/routes.py:57
+msgid "Create a new account"
+msgstr "Crea una cuenta nueva"
+
+#: app/auth/routes.py:57
+msgid "Register"
+msgstr "Registrarse"
+
+#: app/auth/routes.py:57
+msgid "Register account"
+msgstr "Registrar Cuenta"
+
+#: app/auth/routes.py:75
+msgid "Invalid Username or password!"
+msgstr "¡Usuario o contraseña no válidos!"
+
+#: app/auth/routes.py:79 app/templates/auth.html:96
+msgid "Login"
+msgstr "Acceso"
+
+#: app/main/forms.py:9
+msgid "Name"
+msgstr "Nombre"
+
+#: app/main/forms.py:10
+msgid "Street"
+msgstr "Calle"
+
+#: app/main/forms.py:11
+msgid "City"
+msgstr "Ciudad"
+
+#: app/main/forms.py:12
+msgid "Description"
+msgstr "Descripción"
+
+#: app/main/forms.py:14 app/main/forms.py:21
+msgid "Submit"
+msgstr "Enviar"
+
+#: app/main/forms.py:18
+msgid "Rating"
+msgstr "Valoración"
+
+#: app/main/forms.py:19
+msgid "Text"
+msgstr "Opinión"
+
+#: app/main/routes.py:33
+msgid "Home"
+msgstr "Inicio"
+
+#: app/main/routes.py:61
+msgid "Business succesfully created"
+msgstr "Negocio creado con éxito"
+
+#: app/main/routes.py:66
+msgid "New Business"
+msgstr "Nuevo negocio"
+
+#: app/main/routes.py:82
+msgid "Review succesfully created"
+msgstr "Reseña creada con éxito"
+
+#: app/templates/_review_card.html:32
+#, python-format
+msgid "%(when)s"
+msgstr "%(when)s"
+
+#: app/templates/_review_modal.html:9
+msgid "Add Review"
+msgstr "Añadir reseña"
+
+#: app/templates/_star_rating.html:23
+msgid "review"
+msgstr "reseña"
+
+#: app/templates/_star_rating.html:25
+msgid "reviews"
+msgstr "reseñas"
+
+#: app/templates/_star_rating.html:30
+msgid "No ratings yet"
+msgstr "Aún no hay valoraciones"
+
+#: app/templates/auth.html:15 app/templates/auth.html:30
+#: app/templates/auth.html:38 app/templates/auth.html:46
+#: app/templates/auth.html:54 app/templates/auth.html:63
+#: app/templates/auth.html:74
+msgid "Close"
+msgstr "Cerrar"
+
+#: app/templates/auth.html:22
+msgid "User Authentication"
+msgstr "Autenticacion de usuario"
+
+#: app/templates/auth.html:92
+msgid "New here?"
+msgstr "¿Nuevo aquí?"
+
+#: app/templates/auth.html:93
+msgid "Create account"
+msgstr "Crea una cuenta"
+
+#: app/templates/auth.html:95
+msgid "Already have an account?"
+msgstr "¿Ya dispone de una cueta?"
+
+#: app/templates/base.html:40
+msgid "Hola!"
+msgstr "Hi!"
+
+#: app/templates/base.html:43
+msgid "Toggle Dropdown"
+msgstr "Alternar Desplegable"
+
+#: app/templates/base.html:47
+msgid "Edit profile"
+msgstr "Editar perfil"
+
+#: app/templates/base.html:53
+msgid "Log Out"
+msgstr "Cerrar sesión"
+
+#: app/templates/business.html:14
+msgid "Add a New Busines"
+msgstr "Añadir un negocio nuevo"
+
+#: app/templates/business_details.html:18
+msgid "Location"
+msgstr "Ubicación"
+
+#: app/templates/business_details.html:28
+msgid "Reviews"
+msgstr "Reseñas"
+
+#: app/templates/business_details.html:30
+msgid "Add a new Review"
+msgstr "Añadir una reña nueva"
+
+#: app/templates/business_details.html:38
+msgid "No reviews of this business yet"
+msgstr "Aún no hay reseñas de este negocio"
+
+#: app/templates/index.html:10
+msgid "Add a new Business"
+msgstr "Añadir un negocio nuevo"
+
+#: app/templates/errors/404.html:4
+msgid "Not Found"
+msgstr "No encontrado"
+
+#: app/templates/errors/404.html:6 app/templates/errors/500.html:7
+msgid "Back"
+msgstr "Volver"
+
+#: app/templates/errors/500.html:4
+msgid "An unexpected error has occurred"
+msgstr "Ha ocurrido un error inesperado"
+
+#: app/templates/errors/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr "El administrador ha sido notificado. ¡Disculpe las molestias!"

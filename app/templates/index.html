@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content%}
+<div class="container py-4 text-center">
+  {% if current_user.is_authenticated %}
+  <div class="row g-20 justify-content-md-center" style="margin-bottom: 3%">
+    <div class="col col-3" :span="12">
+      <div class="card border-primary">
+        <div class="card-body">
+          <a class="btn btn-primary" href="{{url_for('main.create_business')}}" role="button">{{ _("Add a new Business") }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% if businesses %}
+  <div class="container">
+    <div class="row row-cols-auto justify-content-md-center gx-4 gy-2">
+      {% for business in businesses %}
+      {% include '_business_card.html' %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
