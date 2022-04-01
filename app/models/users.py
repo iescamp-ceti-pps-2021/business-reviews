@@ -48,8 +48,8 @@ class User(UserMixin, BaseModelMixin, db.Model):
 
         avatar = cache.get(str(self.id))
         if avatar is None:
-            r = requests.get(f"https://hashvatar.vercel.app/{digest}/{variant}")
-            # r = requests.get(f"http://localhost:3000/sha256avatar/{digest}?v={variant}")
+            # r = requests.get(f"https://hashvatar.vercel.app/{digest}/{variant}")
+            r = requests.get(f"http://localhost:3000/sha256avatar/{digest}?v={variant}")
             avatar = r.text.replace("\"", "'")
             cache.set(str(self.id), avatar)
         else:

@@ -11,11 +11,7 @@ from flask_migrate import Migrate
 from flask_moment import Moment
 from flask_redis import FlaskRedis
 from flask_sqlalchemy import SQLAlchemy
-
-try:
-    from fakeredis import FakeRedis as Redis
-except ImportError:
-    from redis import Redis
+from redis import Redis
 
 argon2 = Argon2()
 db = SQLAlchemy()
@@ -28,8 +24,8 @@ lm.login_message = _l('Please log in to access this page.')
 lm.login_message_category = "info"
 moment = Moment()
 babel = Babel()
-# cache = FlaskRedis()
-cache = FlaskRedis.from_custom_provider(Redis)
+cache = FlaskRedis()
+# cache = FlaskRedis.from_custom_provider(Redis)
 
 
 def create_app(config, **kwargs):
