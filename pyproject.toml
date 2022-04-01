@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "flask-postgresql-sample"
+name = "business-reviews"
 version = "0.1.0"
 description = "Aplicación de ejemplo desarrollada con Flask. Para uso educativo."
 authors = ["Francisco González-Cavero <fa.gonzalezcavero@edu.gva.es>"]
