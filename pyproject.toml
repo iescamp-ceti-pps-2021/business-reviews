@@ -7,7 +7,8 @@ authors = ["Francisco González-Cavero <fa.gonzalezcavero@edu.gva.es>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 python-dotenv = "^0.19.2"
-Flask = "^2.0.3"
+Werkzeug = "~2.0.3"
+Flask = "~2.0.3"
 Flask-Argon2 = "^0.2.0"
 Flask-Login = "^0.5.0"
 psycopg2-binary = { version = "^2.9.3", optional = true }
