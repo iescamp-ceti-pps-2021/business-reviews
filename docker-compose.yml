@@ -6,7 +6,7 @@ services:
       context: ./docker/mysql
       args:
         mysql_version: ${MYSQL_VERSION}
-    image: chinook_mysql
+    image: business-reviews_mysql
     container_name: ${DOCKER_COMPOSE_PROJECT_NAME}-mysql
     environment:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -19,7 +19,7 @@ services:
     volumes:
       - "mysql_data:/var/lib/mysql"
     # networks:
-    #   - chinook_network
+    #   - business-reviews_mysql_network
     restart: always
 
 volumes:
